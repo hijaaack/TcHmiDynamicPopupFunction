@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FE7A1B72-C5B7-4D7C-BB7D-76384D4DE8E1}") = "TcHmiDynamicPopupFunction", "TcHmiDynamicPopupFunction\TcHmiDynamicPopupFunction.hmiproj", "{CB550D7C-79FD-460E-BD80-13277EEC24D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|TwinCAT HMI = Debug|TwinCAT HMI
+		Release|TwinCAT HMI = Release|TwinCAT HMI
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB550D7C-79FD-460E-BD80-13277EEC24D2}.Debug|TwinCAT HMI.ActiveCfg = Debug|TwinCAT HMI
+		{CB550D7C-79FD-460E-BD80-13277EEC24D2}.Debug|TwinCAT HMI.Build.0 = Debug|TwinCAT HMI
+		{CB550D7C-79FD-460E-BD80-13277EEC24D2}.Release|TwinCAT HMI.ActiveCfg = Release|TwinCAT HMI
+		{CB550D7C-79FD-460E-BD80-13277EEC24D2}.Release|TwinCAT HMI.Build.0 = Release|TwinCAT HMI
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E211F008-B84D-4FE2-B68A-7B700658DD83}
+	EndGlobalSection
+EndGlobal

@@ -1,4 +1,21 @@
 {
-	"$schema": "http://json-schema.org/draft-04/schema#",
-	"definitions": {}
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "UserControl1": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\UserControl1.usercontrol.json",
+      "id": "tchmi:project#/definitions/UserControl1",
+      "type": "object"
+    },
+    "UserControl2": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\UserControl2.usercontrol.json",
+      "id": "tchmi:project#/definitions/UserControl2",
+      "type": "object"
+    }
+  }
 }

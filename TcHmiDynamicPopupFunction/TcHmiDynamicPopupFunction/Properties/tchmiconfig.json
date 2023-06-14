@@ -50,9 +50,21 @@
       "name": "Fonts/Fonts.css",
       "description": "",
       "type": "Stylesheet"
+    },
+    {
+      "name": "JS/CreatePopup.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
-  "userControls": [],
+  "userControls": [
+    {
+      "url": "UserControls/UserControl1.usercontrol"
+    },
+    {
+      "url": "UserControls/UserControl2.usercontrol"
+    }
+  ],
   "content": [],
   "views": [
     {
@@ -62,9 +74,20 @@
       "preloadBindings": false
     }
   ],
-  "userFunctions": [],
+  "userFunctions": [
+    {
+      "url": "JS/CreatePopup.js"
+    }
+  ],
   "symbols": {
-    "internal": {},
+    "internal": {
+      "UC1_parameter1": {
+        "value": 123.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      }
+    },
     "themedResources": {}
   },
   "trigger": [],

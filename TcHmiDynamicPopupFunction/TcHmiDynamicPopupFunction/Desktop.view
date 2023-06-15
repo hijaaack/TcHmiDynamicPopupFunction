@@ -2,7 +2,7 @@
   <div id="ViewDesktopBeckhoffLogo" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-src="Images/Beckhoff_Logo.svg" data-tchmi-left="20" data-tchmi-top="20" data-tchmi-width="194" data-tchmi-height="57">
 
   </div>
-<div id="TcHmiButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="224" data-tchmi-left-unit="px" data-tchmi-text="Button" data-tchmi-top="20" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+<div id="TcHmiButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="68" data-tchmi-height-unit="px" data-tchmi-left="224" data-tchmi-left-unit="px" data-tchmi-text="UserControl2" data-tchmi-top="87" data-tchmi-top-unit="px" data-tchmi-width="123" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18">
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -17,7 +17,7 @@
           {
             "objectType": "StaticValue",
             "valueType": "tchmi:general#/definitions/String",
-            "value": "testing"
+            "value": "MyUniqueID1"
           },
           {
             "objectType": "StaticValue",
@@ -25,31 +25,51 @@
             "value": {
               "path": "UserControls/UserControl2.usercontrol",
               "attributes": {
-                "data-tchmi-valuetochange": "%i%UC1_parameter1%/i%",
-                "data-tchmi-togglebool": true,
-                "data-tchmi-label": "abasdasd"
+                "data-tchmi-valuetochange": "%i%mySymbol1%/i%",
+                "data-tchmi-togglebool": "%i%myBool%/i%",
+                "data-tchmi-label": "Testing Label"
               }
             }
           },
           {
             "objectType": "StaticValue",
             "valueType": "tchmi:general#/definitions/String",
-            "value": "HeaderTextWow"
+            "value": "UserControl 2"
           },
           {
-            "objectType": "StaticValue",
+            "objectType": "Symbol",
             "valueType": "tchmi:general#/definitions/Boolean",
-            "value": false
+            "symbolExpression": "%i%uc2_modal%/i%"
           },
           {
-            "objectType": "StaticValue",
+            "objectType": "Symbol",
             "valueType": "tchmi:general#/definitions/Boolean",
-            "value": true
+            "symbolExpression": "%i%uc2_movable%/i%"
           },
           {
             "objectType": "Symbol",
             "valueType": "tchmi:framework#/definitions/Id",
             "symbolExpression": "%ctrl%Desktop::id%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Number",
+            "value": 300.0
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Number",
+            "value": 300.0
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Number",
+            "value": 100.0
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Number",
+            "value": 100.0
           }
         ],
         "asyncWait": true
@@ -59,7 +79,13 @@
 ]
 </script>
 </div>
-<div id="TcHmiButton_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="334" data-tchmi-left-unit="px" data-tchmi-text="Button" data-tchmi-top="20" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+<div id="TcHmiTextblock_6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="57" data-tchmi-height-unit="px" data-tchmi-left="224" data-tchmi-left-unit="px" data-tchmi-text="Dynamic Popup Function Sample" data-tchmi-top="20" data-tchmi-top-unit="px" data-tchmi-width="566" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="26" data-tchmi-text-vertical-alignment="Center">
+</div>
+<div id="TcHmiToggleSwitch_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="224" data-tchmi-left-unit="px" data-tchmi-text="Movable" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="123" data-tchmi-width-unit="px" data-tchmi-state-symbol="%i%uc2_movable%/i%">
+</div>
+<div id="TcHmiToggleSwitch_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="224" data-tchmi-left-unit="px" data-tchmi-text="Modal" data-tchmi-top="201" data-tchmi-top-unit="px" data-tchmi-width="123" data-tchmi-width-unit="px" data-tchmi-state-symbol="%i%uc2_modal%/i%">
+</div>
+<div id="TcHmiButton_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="68" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-text="UserControl1" data-tchmi-top="87" data-tchmi-top-unit="px" data-tchmi-width="123" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -73,39 +99,57 @@
           {
             "objectType": "StaticValue",
             "valueType": "tchmi:general#/definitions/String",
-            "value": "testing"
+            "value": "MyUniqueID2"
           },
           {
             "objectType": "StaticValue",
             "valueType": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiPopup.TargetFile",
             "value": {
-              "path": "UserControls/UserControl2.usercontrol",
+              "path": "UserControls/UserControl1.usercontrol",
               "attributes": {
-                "data-tchmi-valuetochange": "%i%UC1_parameter1%/i%",
-                "data-tchmi-togglebool": true,
-                "data-tchmi-label": "abasdasd"
+                "data-tchmi-myparameter": "%i%mySymbol2%/i%"
               }
             }
           },
           {
             "objectType": "StaticValue",
             "valueType": "tchmi:general#/definitions/String",
-            "value": "HeaderTextWow"
+            "value": "UserControl 1"
           },
           {
-            "objectType": "StaticValue",
-            "valueType": "tchmi:general#/definitions/Boolean",
-            "value": false
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%i%uc1_modal%/i%"
           },
           {
-            "objectType": "StaticValue",
-            "valueType": "tchmi:general#/definitions/Boolean",
-            "value": false
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%i%uc1_movable%/i%"
           },
           {
             "objectType": "Symbol",
             "valueType": "tchmi:framework#/definitions/Id",
             "symbolExpression": "%ctrl%Desktop::id%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Number",
+            "value": 200.0
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Number",
+            "value": 150.0
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Number",
+            "value": 100.0
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Number",
+            "value": 100.0
           }
         ],
         "asyncWait": true
@@ -115,60 +159,8 @@
 ]
 </script>
 </div>
-<div id="TcHmiButton_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="444" data-tchmi-left-unit="px" data-tchmi-text="Button" data-tchmi-top="20" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiButton_2.onPressed",
-    "actions": [
-      {
-        "objectType": "Function",
-        "active": true,
-        "fn": "TcHmi.Functions.TcHmiDynamicPopupFunction.CreatePopup",
-        "fnParams": [
-          {
-            "objectType": "StaticValue",
-            "valueType": "tchmi:general#/definitions/String",
-            "value": "testing"
-          },
-          {
-            "objectType": "StaticValue",
-            "valueType": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiPopup.TargetFile",
-            "value": {
-              "path": "UserControls/UserControl2.usercontrol",
-              "attributes": {
-                "data-tchmi-valuetochange": "%i%UC1_parameter1%/i%",
-                "data-tchmi-togglebool": true,
-                "data-tchmi-label": "abasdasd"
-              }
-            }
-          },
-          {
-            "objectType": "StaticValue",
-            "valueType": "tchmi:general#/definitions/String",
-            "value": "HeaderTextWow"
-          },
-          {
-            "objectType": "StaticValue",
-            "valueType": "tchmi:general#/definitions/Boolean",
-            "value": true
-          },
-          {
-            "objectType": "StaticValue",
-            "valueType": "tchmi:general#/definitions/Boolean",
-            "value": false
-          },
-          {
-            "objectType": "Symbol",
-            "valueType": "tchmi:framework#/definitions/Id",
-            "symbolExpression": "%ctrl%Desktop::id%/ctrl%"
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
+<div id="TcHmiToggleSwitch_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-text="Movable" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="123" data-tchmi-width-unit="px" data-tchmi-state-symbol="%i%uc1_movable%/i%">
+</div>
+<div id="TcHmiToggleSwitch_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-text="Modal" data-tchmi-top="201" data-tchmi-top-unit="px" data-tchmi-width="123" data-tchmi-width-unit="px" data-tchmi-state-symbol="%i%uc1_modal%/i%">
 </div>
 </div>

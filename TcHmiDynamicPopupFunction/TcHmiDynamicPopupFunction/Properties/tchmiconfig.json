@@ -81,9 +81,45 @@
   ],
   "symbols": {
     "internal": {
-      "UC1_parameter1": {
-        "value": 123.0,
+      "mySymbol1": {
+        "value": 50.0,
         "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "mySymbol2": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "myBool": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "uc2_movable": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "uc2_modal": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "uc1_movable": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "uc1_modal": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
         "persist": false,
         "readonly": false
       }

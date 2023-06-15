@@ -6,7 +6,7 @@
     (function (/** @type {globalThis.TcHmi.Functions} */ Functions) {
         var TcHmiDynamicPopupFunction;
         (function (TcHmiDynamicPopupFunction) {
-            function CreatePopup(popupId, targetFile, popupHeader, modal, movable, destination) {
+            function CreatePopup(popupId, targetFile, popupHeader, modal, movable, destination, width, height, left, top) {
 
                 const id = popupId + ".UserControlHost";
 
@@ -20,9 +20,9 @@
                 else {
                     try {
                         //get the popup provider
-                        const popupUiProvider = TcHmi.UiProvider.getPreferredProvider("popup"); 
+                        const popupUiProvider = TcHmi.UiProvider.getPreferredProvider("popup");
 
-                        //Create parameters for the popup
+                        //Create default parameters for the popup
                         let parameters = {
                             "data-tchmi-target-user-control": targetFile.path,
                             "data-tchmi-left": 0,
@@ -32,6 +32,7 @@
                             "data-tchmi-width-unit": "%",
                             "data-tchmi-height-unit": "%"
                         };
+                        //Create partial parameters for the popup
                         let attributes = targetFile.attributes;
                         for (const key in attributes) {
                             if (attributes.hasOwnProperty(key)) {
@@ -44,7 +45,7 @@
                             "TcHmi.Controls.System.TcHmiUserControlHost",
                             id,
                             parameters
-                        );                      
+                        );
 
                         const popupElement = popupHost.getElement()[0]; //retrieve html-element
                         const popupDestination = TcHmi.Controls.get(destination); //get destination control
@@ -61,12 +62,12 @@
                         }
 
                         popup.setBounds({
-                            width: 260,
-                            height: 300,
-                            left: 100,
-                            top: 100
+                            width: width,
+                            height: height,
+                            left: left,
+                            top: top
                         });
-                     
+
                         popup.setCloseButton(true);
                         popup.show();
 

@@ -83,6 +83,54 @@
         "restParameter": false,
         "asReference": false,
         "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "width",
+        "displayName": "width",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "Width in px",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "height",
+        "displayName": "height",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "Height in px",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "left",
+        "displayName": "left",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "Left position in px",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "top",
+        "displayName": "top",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "Top position in px",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
       }
     ]
   },

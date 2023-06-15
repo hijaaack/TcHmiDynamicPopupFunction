@@ -13,9 +13,9 @@ always subject to change, revision, and rethinking at any time. Please do not ho
 in perpetuity.
 
 ## TcHmiDynamicPopupFunction
-This is a sample TwinCAT HMI project that uses the new TcHmiPopup control that was added in v1.12.760.x
+In version 1.12.760.x a new TcHmiPopup control was added to TwinCAT HMI. 
 
-The sample is using the TcHmiPopup control but instead of having to add it manually to the view/content it dynamically creates it with a javascript-function.
+So instead of having to add the Popup manually to the view/content this sample is dynamically creating a usercontrol by calling a javascript function and it will have the same look & feel as the new TcHmiPopup. 
 
 ## Sample video of the project
 

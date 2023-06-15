@@ -18,4 +18,5 @@ The sample is using the TcHmiPopup-control but instead of having to add it manua
 
 ## Sample video of the project
 
- [![Watch the video](https://user-images.githubusercontent.com/75740551/246053766-22c98efd-1829-4616-b92e-3dd8f9ec3919.mp4)
+https://user-images.githubusercontent.com/75740551/246053766-22c98efd-1829-4616-b92e-3dd8f9ec3919.mp4
+

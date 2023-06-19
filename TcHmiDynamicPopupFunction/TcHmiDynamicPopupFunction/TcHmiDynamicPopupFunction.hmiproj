@@ -110,6 +110,9 @@
   <Target Name="Clean" DependsOnTargets="$(CleanDependsOn)" />
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <ItemGroup>
+    <Content Include="Themes\Base\Images\Background.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls\UserControl1.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -263,10 +266,6 @@
       <Visible>true</Visible>
     </Content>
     <Content Include="Themes\Base\Images\Splash-800x600.png">
-      <SubType>Content</SubType>
-      <Visible>true</Visible>
-    </Content>
-    <Content Include="Themes\Base\Images\Background.png">
       <SubType>Content</SubType>
       <Visible>true</Visible>
     </Content>

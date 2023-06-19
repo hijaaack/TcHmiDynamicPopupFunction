@@ -71,9 +71,10 @@
                         popup.setCloseButton(true);
                         popup.show();
 
-                        TcHmi.EventProvider.register(id + ".onDetached", () => {
+                        TcHmi.EventProvider.register(id + ".onDetached", (e, data) => {
                             popup.destroy();
                             popupHost.destroy();
+                            e.destroy();
                         });
 
                     } catch (e) {
